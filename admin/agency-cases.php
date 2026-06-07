@@ -88,5 +88,4 @@ include '../includes/header.php'; ?>
     </main>
 </div>
 
-awaw
-<?php include '../includes/footer.php'; ?>  
+<?php include '../includes/footer.php'; ?>    
