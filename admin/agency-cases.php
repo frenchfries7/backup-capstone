@@ -4,7 +4,7 @@ require_once '../includes/db.php';
 require_once '../includes/auth.php';
 require_once '../includes/functions.php';
 require_auth('admin');
-$page_title = 'Agency Cases kupal';
+$page_title = 'Agency Cases';
 $use_dashboard_css = true;
 $agencies = $pdo->query("SELECT id, name FROM agencies ORDER BY name")->fetchAll();
 $agency_id = $_GET['agency_id'] ?? ($agencies[0]['id'] ?? null);
@@ -88,9 +88,4 @@ include '../includes/header.php'; ?>
     </main>
 </div>
 
-<<<<<<< HEAD
-awaw
-<?php include '../includes/footer.php'; ?>  
-=======
-<?php include '../includes/footer.php'; ?>    
->>>>>>> fb2dc0edd7c0b0d6da5bf6971b2a35604c5d181f
+<?php include '../includes/footer.php'; ?>
