@@ -4,7 +4,7 @@ require_once '../includes/db.php';
 require_once '../includes/auth.php';
 require_once '../includes/functions.php';
 require_auth('admin');
-$page_title = 'Agency Cases';
+$page_title = 'Agency Cases kupal';
 $use_dashboard_css = true;
 $agencies = $pdo->query("SELECT id, name FROM agencies ORDER BY name")->fetchAll();
 $agency_id = $_GET['agency_id'] ?? ($agencies[0]['id'] ?? null);
